@@ -25,6 +25,7 @@ console.log(myFirstJob);
 console.log(myCurrentJob);
 */
 
+/*
 //Data Types
 
 //boolean을 변수에 저장할 수도 있다.
@@ -46,3 +47,51 @@ console.log(typeof yaer);
 //undefined -> 값이 있는것으로 타입 재설정
 year = 1991;
 console.log(typeof yaer);
+*/
+
+/*
+//변수를 선언하는 3가지 방법
+let age = 30;
+age = 31;
+
+const birthYear = 1991;
+// birthYear = 1990; <- X
+// const job; <- X
+
+var job = "programmer";
+job = "teacher";
+
+lastName = "Schmedtmann";
+console.log(lastName);
+*/
+
+//수학 연산자 Math operators
+const now = 2037;
+const ageJonas = now - 1991;
+const ageSarah = now - 2018;
+console.log(ageJonas, ageSarah);
+
+console.log(ageJonas * 2, ageJonas / 10, 2 ** 3);
+// 2 ** 3 means 2 to the power of 3 = 2 * 2 * 2
+
+const firstName = "Jonas";
+const lastName = "Schmedtmann";
+console.log(firstName + " " + lastName);
+
+//할당 연산자 Assignment operators
+let x = 10 + 5; // 15
+x += 10; // (+=이 의미하는 바 : x = x + 10) // x = x + 10 => 25
+x *= 4; // (*=이 의미하는 바 : x = x * 4) // x = x * 4 => 100
+x++; // x = x + 1 => 101
+x--; // x = x - 1 => 100
+x--; // x = x - 1 => 99
+console.log(x);
+
+//비교 연산자 Comparison operators
+//조나스가 사라보다 나이가 많습니까?
+console.log(ageJonas > ageSarah); // >, <, >=, <=
+console.log(ageSarah >= 18);
+
+const isFullAge = ageSarah >= 18;
+
+console.log(now - 1991 > now - 2018);
