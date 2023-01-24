@@ -63,7 +63,7 @@ job = "teacher";
 
 lastName = "Schmedtmann";
 console.log(lastName);
-*/
+
 
 //수학 연산자 Math operators
 const now = 2037;
@@ -89,9 +89,28 @@ console.log(x);
 
 //비교 연산자 Comparison operators
 //조나스가 사라보다 나이가 많습니까?
-console.log(ageJonas > ageSarah); // >, <, >=, <=
+console.log(ageJonas > ageSarah); // 비교연산자 : >, <, >=, <=
 console.log(ageSarah >= 18);
 
 const isFullAge = ageSarah >= 18;
 
+console.log(now - 1991 > now - 2018); // 비교연산자보다 '-' 가 먼저 실행된다.
+*/
+
+//연산자 우선순위 Operator Precedence
+
+const now = 2037;
+const ageJonas = now - 1991;
+const ageSarah = now - 2018;
+
 console.log(now - 1991 > now - 2018);
+
+// console.log(25 - 10 - 5); //일반적으로 연산자는 왼쪽에서 오른쪽으로 읽힌다.
+
+let x, y; // 두 개의 변수를 동시에 정의할 수 있다.
+x = y = 25 - 10 - 5; // x = y = 10, x = 10 // 결국에는 x와 y 모두 10이 된다.
+console.log(x, y);
+
+// 평균 연령을 계산해보자.
+const averageAge = (ageJonas + ageSarah) / 2;
+console.log(ageJonas, ageSarah, averageAge);
