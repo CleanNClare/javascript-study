@@ -116,4 +116,33 @@ const averageAge = (ageJonas + ageSarah) / 2;
 console.log(ageJonas, ageSarah, averageAge);
 */
 
-//Coding Challenge #1
+//strings and template literals
+
+const firstName = "jonas";
+const job = "teacher";
+const birthYear = 1991;
+const year = 2037;
+
+const jonas =
+  "I'm " + firstName + ", a " + (year - birthYear) + " year old " + job + "!";
+console.log(jonas);
+
+// ESXi 템플릿 리터럴을 사용하면 보다 일반적인 방법으로 문자열을 작성할 수 있습니다.
+const jonasNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
+console.log(jonasNew);
+
+console.log(`Just a regular string...`);
+
+// 여러줄 문자열 만들기
+
+// 옛날방식 _ \n\을 이용한 여러문자열 만들기
+console.log(
+  "String with \n\
+multiple \n\
+lines"
+);
+
+// 요즘방식 _ ` (백틱) 을 사용하여 리턴 키를 누르는것
+console.log(`String
+multiple
+lines`);
